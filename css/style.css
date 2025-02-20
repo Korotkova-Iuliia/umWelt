@@ -130,3 +130,8 @@ img {
 .logo-header img {
   max-height: 50px;
 }
+
+.star-icon,
+.icon-soc-youtube {
+  fill: gold;
+}
