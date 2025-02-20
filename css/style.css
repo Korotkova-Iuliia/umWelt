@@ -1,0 +1,132 @@
+:root {
+  --font-main: 'Roboto', Arial, serif;
+  --font-Zahl: 'Protest Guerrilla', sans-serif;
+  --color-title: #1d1d1d;
+  --color-txt: #1d1d1d;
+  --color-accent: #0038ff;
+  --color-accent-dark: #001166;
+  --color-contakt: #1d1d1d;
+  --background-bace: #e0f2f9;
+  --color-soc: #5f5f5f;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+  color: var(--color-txt);
+}
+.section {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+p {
+  font-family: var(--font-main);
+}
+.zahl {
+  font-family: var(--font-zahl);
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 152px;
+    padding-bottom: 152px;
+  }
+}
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Soc link */
+.soc_list {
+  display: flex;
+  justify-content: center;
+}
+.soc_item:not(:last-child) {
+  margin-right: 10px;
+}
+.soc_icon {
+  width: 20px;
+  height: 20px;
+}
+.soc_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-soc);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc_link {
+  background-color: transparent;
+}
+.soc_link:hover,
+.soc_link:focus {
+  fill: var(--color-accent);
+}
+/* Нeader */
+.header {
+  background-color: #fff;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header_container {
+  padding: 0 20px;
+  display: flex;
+}
+.header_nav {
+  display: block;
+  align-items: center;
+}
+
+.logo-header img {
+  max-height: 50px;
+}
