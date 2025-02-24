@@ -325,7 +325,7 @@ br.media1200 {
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 20px;
-    background: url('../img/map_hero_desktop.jpg') center/cover no-repeat;
+    background: url('../img/map_hero_desktop.webp') center/cover no-repeat;
     min-height: 100vh;
   }
 }
@@ -471,7 +471,7 @@ br.media1200 {
 
 .sectionDescription::before {
   content: '';
-  background: url('../img/map_deskription_mobile.jpg') center/cover no-repeat;
+  background: url('../img/map_deskription_mobile.webp') center/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -482,7 +482,8 @@ br.media1200 {
 @media screen and (min-width: 1200px) {
   .sectionDescription::before {
     content: '';
-    background: url('../img/map_deskription_desktop.jpg') center/cover no-repeat;
+    background: url('../img/map_deskription_desktop.webp') center/cover
+      no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -598,13 +599,13 @@ br.media1200 {
 /* footer */
 
 footer.section {
-  background: url('../img/map_footer_mobile.jpg') center/cover no-repeat;
+  background: url('../img/map_footer_mobile.webp') center/cover no-repeat;
   min-height: 100vh;
   padding-bottom: 500px;
 }
 @media screen and (min-width: 1200px) {
   footer.section {
-    background: url('../img/map_footer_desktop.jpg') center/cover no-repeat;
+    background: url('../img/map_footer_desktop.webp') center/cover no-repeat;
     padding-bottom: 478px;
   }
 }
