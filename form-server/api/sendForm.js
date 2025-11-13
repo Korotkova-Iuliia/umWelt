@@ -11,9 +11,8 @@ export default async function handler(req, res) {
     // Берём данные из тела запроса
     const { name, email, type } = req.body;
 
-    // ✅ Сюда вставь свой реальный URL Google Script
-    const scriptUrl =
-      'https://script.google.com/macros/s/AKfycbwFiRRyKBu_aTJykwAscV7Tgz3_0_DgbLXK4vfG_7fGPKR1p9n-wC0fyp4xZcp09dpv/exec';
+    // ✅ Сюда вставь переменную своего реальный URL Google Script
+    const scriptUrl = process.env.GAS_URL;
 
     // Подготавливаем данные как URLSearchParams (Google Script принимает так)
     const params = new URLSearchParams({ name, email, type });
