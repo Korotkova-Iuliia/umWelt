@@ -21,11 +21,11 @@ export default async function handler(req, res) {
     const scriptUrl = process.env.GAS_URL;
     if (!scriptUrl) return res.status(500).json({ error: 'Missing GAS_URL' });
 
-    const response = await fetch(
-      `${scriptUrl}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(
-        email
-      )}&bookType=${encodeURIComponent(type)}&agree=true`
-    );
+    const response = await fetch('https://um-welt.vercel.app/api/sendForm', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
 
     const text = await response.text();
 
