@@ -821,3 +821,18 @@ footer .footer_soc_list {
     font-size: 15px;
   }
 }
+
+.img_wrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.lazy-img {
+  filter: blur(14px);
+  transition: filter 0.4s ease;
+}
+
+.lazy-img.loaded {
+  filter: blur(0);
+}
