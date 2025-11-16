@@ -635,17 +635,17 @@ br.media1200 {
 } */
 
 footer.section {
-  min-height: 100vh;
-  padding-bottom: 500px;
-
+  padding-top: 16px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 1200px) {
   footer.section {
-    padding-bottom: 478px;
+    padding-top: 20px;
+    min-height: 100vh;
   }
 }
 
