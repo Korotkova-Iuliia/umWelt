@@ -79,6 +79,15 @@ img {
   height: auto;
 }
 
+.lazy-img {
+  filter: blur(14px);
+  transition: filter 0.4s ease;
+}
+
+.lazy-img.loaded {
+  filter: blur(0);
+}
+
 h1 {
   font-family: var(--font-main);
   font-size: 40px;
@@ -319,13 +328,28 @@ br.media1200 {
 
 /* section Hero */
 
-.hero {
+/* .hero {
   padding-top: 16px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 20px; */
+/* background: url('../img/map_hero_desktop.webp') center/cover no-repeat; */
+/* min-height: 100vh;
+  }
+} */
+.hero {
+  padding-top: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
     padding-top: 20px;
-    background: url('../img/map_hero_desktop.webp') center/cover no-repeat;
     min-height: 100vh;
   }
 }
@@ -598,7 +622,7 @@ br.media1200 {
 
 /* footer */
 
-footer.section {
+/* footer.section {
   background: url('../img/map_footer_mobile.webp') center/cover no-repeat;
   min-height: 100vh;
   padding-bottom: 500px;
@@ -606,6 +630,21 @@ footer.section {
 @media screen and (min-width: 1200px) {
   footer.section {
     background: url('../img/map_footer_desktop.webp') center/cover no-repeat;
+    padding-bottom: 478px;
+  }
+} */
+
+footer.section {
+  min-height: 100vh;
+  padding-bottom: 500px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  footer.section {
     padding-bottom: 478px;
   }
 }
@@ -820,19 +859,4 @@ footer .footer_soc_list {
   #bookForm select {
     font-size: 15px;
   }
-}
-
-.img_wrap img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.lazy-img {
-  filter: blur(14px);
-  transition: filter 0.4s ease;
-}
-
-.lazy-img.loaded {
-  filter: blur(0);
 }
