@@ -8,7 +8,7 @@
   --color-accent: #0038ff;
   --color-accent-dark: #001166;
   --color-contakt: #1d1d1d;
-  --background-bace: #e0f2f9;
+  --background-bace: #ecf7fc;
   --color-soc: #5f5f5f;
 }
 body {
@@ -328,14 +328,21 @@ br.media1200 {
 
 /* section Hero */
 
+footer.section {
+}
+
 .hero {
   padding-top: 16px;
+  background-color: var(--background-bace);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero {
     padding-top: 20px;
-    background: url('../img/map_hero_desktop.webp') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
+    background: url('../img/map_hero_desktop.webp');
   }
 }
 
