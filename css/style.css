@@ -643,7 +643,7 @@ footer.section {
   background-image: url('../img/map_footer_mobile.webp');
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   footer.section {
     padding-top: 20px;
     background-image: url('../img/map_footer_desktop.webp');
