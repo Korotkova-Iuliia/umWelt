@@ -781,7 +781,7 @@ footer .footer_soc_list {
 .modal-content h2 {
   margin-bottom: 15px;
   text-align: center;
-  color: #2e2e2e;
+  color: var(--color-title);
   font-size: 1.4rem;
 }
 
@@ -805,7 +805,7 @@ footer .footer_soc_list {
   width: 100%;
   padding: 10px;
   margin-bottom: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-title_small);
   border-radius: 6px;
   font-size: 16px;
   transition: border-color 0.2s ease;
@@ -813,7 +813,7 @@ footer .footer_soc_list {
 
 #bookForm input:focus,
 #bookForm select:focus {
-  border-color: #2e7d32;
+  border-color: (var(--color-accent));
   outline: none;
 }
 
@@ -830,7 +830,7 @@ footer .footer_soc_list {
 #submitBtn {
   width: 100%;
   padding: 10px 15px;
-  background-color: #2e7d32;
+  background-color: var(--color-accent);
   color: white;
   border: none;
   border-radius: 6px;
@@ -840,11 +840,11 @@ footer .footer_soc_list {
 }
 
 #submitBtn:hover {
-  background-color: #256427;
+  background-color: var(--color-accent-dark);
 }
 
 #submitBtn[disabled] {
-  background-color: #ccc;
+  background-color: var(--background-bace);
   cursor: not-allowed;
 }
 
